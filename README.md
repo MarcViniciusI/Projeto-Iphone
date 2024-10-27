@@ -1,18 +1,27 @@
-## Getting Started
+# Projeto: Simulação de iPhone com Funções Multimídia, Telefone e Navegador
+Este projeto em Java implementa uma simulação de algumas funcionalidades principais do iPhone: reprodutor musical, aparelho telefônico e navegador de internet. A estrutura utiliza interfaces para representar cada funcionalidade, promovendo flexibilidade e modularidade.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Estrutura do Projeto
+O projeto contém as seguintes interfaces e classe:
 
-## Folder Structure
+#### Interfaces:
 
-The workspace contains two folders by default, where:
+MusicaPlayer: Define métodos para a funcionalidade de reprodutor musical, como tocar, pausar e avançar a música.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Telefone: Define métodos para a funcionalidade de telefone, como fazer e encerrar chamadas.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+WebBrowser: Define métodos para a funcionalidade de navegador, como abrir e fechar páginas da web.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+#### Classe:
+iPhone: Implementa as três interfaces (MusicaPlayer, Telefone, e WebBrowser) e fornece a implementação dos métodos para simular o comportamento de um iPhone.
+Estrutura do Código
+Cada interface declara um conjunto de métodos abstratos, e a classe iPhone implementa todos esses métodos utilizando a anotação @Override. Com isso, a classe iPhone cumpre o contrato de cada interface, oferecendo todas as funcionalidades.
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Funcionalidades
+Reproduzir Música: Possibilidade de tocar, pausar e avançar para a próxima faixa.
+Telefone: Realizar e encerrar chamadas simuladas.
+Navegador Web: Abrir e fechar uma página da web.
+## Tecnologias Utilizadas
+Java: Linguagem principal do projeto, explorando conceitos de interfaces, polimorfismo e classes concretas.
+## Licença
+Este projeto é de uso livre para fins educacionais da DIO.
